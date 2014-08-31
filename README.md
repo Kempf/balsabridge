@@ -8,7 +8,7 @@ Above you can see the list of files (currenty - only this _README.md_) and folde
 
 GitHub automatically parses and displays _Markdown_ (.md) files, so fancy formatting options are available. For example, if you want to insert a photo of your bridge, first upload it to imgur (or any other image hosting server) and then use `![description](url)` tag. Read up on markdown syntax [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-Now, the cool thing is that GitHub tracks _all_ the changes made to text files, can merge/compare different versions, show changes made by each person and much, much more. No more manual copy-pasting of word files togeter.
+Now, the cool thing is that GitHub tracks _all_ the changes made to text files, can merge/compare different versions, show changes made by each person and much, much more. No more manually copy-pasting word files togeter.
 
 Another thing, the final report will be written in [LaTeX](http://en.wikipedia.org/wiki/LaTeX) markup language and compiled into a .pdf. Math formulas, prefessional typesetting and completely badass-looking documents are included. A detailed guide is available [here](http://en.wikibooks.org/wiki/LaTeX), but you don't have to learn it - I (Paul) will type it up if needed.
 

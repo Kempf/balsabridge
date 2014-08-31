@@ -1,4 +1,8 @@
-Balsa bridge
+Balsa bridge group assignment
 ===========
 
-ENGN1217 Group assignment
+## Inital objectives
++ Learn how to use GitHub
++ Decide on the bridge design (until the end of the break)
++ ????
++ PROFIT!!!

@@ -10,7 +10,7 @@ GitHub automatically parses and displays _Markdown_ (.md) files, so fancy format
 
 Now, the cool thing is that GitHub tracks _all_ the changes made to text files, can merge/compare different versions, show changes made by each person and much, much more. No more manually copy-pasting word files togeter.
 
-Another thing, the final report will be written in [LaTeX](http://en.wikipedia.org/wiki/LaTeX) markup language and compiled into a .pdf. Math formulas, prefessional typesetting and completely badass-looking documents are included. A detailed guide is available [here](http://en.wikibooks.org/wiki/LaTeX), but you don't have to learn it - I (Paul) will type it up if needed.
+Another thing, the final report will be written in [LaTeX](http://en.wikipedia.org/wiki/LaTeX) markup language and compiled into a .pdf. Math formulas, prefessional typesetting and completely badass-looking documents are included. A detailed guide is available [here](http://en.wikibooks.org/wiki/LaTeX), but you don't have to master it - I (Paul) will type it up if needed.
 
 I know it's a lot of new tech to learn, but bear with me here.
 

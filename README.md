@@ -12,7 +12,7 @@ Now, the cool thing is that GitHub tracks _all_ the changes made to text files, 
 
 Another thing, the final report will be written in [LaTeX](http://en.wikipedia.org/wiki/LaTeX) markup language and compiled into a .pdf. Math formulas, prefessional typesetting and completely badass-looking documents are included. A detailed guide is available [here](http://en.wikibooks.org/wiki/LaTeX), but you don't have to learn it - I (Paul) will type it up if needed.
 
-I know it's a lot of new tech to learn, but bear with me - it'll come in handy in the future.
+I know it's a lot of new tech to learn, but bear with me ![bear](http://i.imgur.com/0vUF6Px.jpg?1) - it'll come in handy in the future.
 
 ## Inital objectives
 + Learn how to use GitHub

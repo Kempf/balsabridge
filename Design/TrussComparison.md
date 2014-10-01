@@ -12,4 +12,6 @@ With Pratt, the shorter vertical members are under tension instead, and Howe tru
 
 Source: [Garret's Bridges](http://www.garrettsbridges.com/).
 
-Please post any of your findings, test results etc. On monday, I'll upload the results of a real crush-test of the three. 
+Please post any of your findings, test results etc.
+
+UPD: Warren-truss bridge (made out of slightly thicker balsa) has won a battle against a frying pan. No real scientific tests were conducted.

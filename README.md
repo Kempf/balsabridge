@@ -19,10 +19,7 @@ I know it's a lot of new tech to learn, but bear with me here.
 It'll come in handy in the future.
 
 ## TODO:
-+ Learn how to use GitHub
-+ Decide on the bridge design
-+ Build the bridge
-+ Predict its strength
++ Predict strength of the bridge
 + Crush it
 + Analyze it
 + ????

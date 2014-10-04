@@ -1,0 +1,76 @@
+________________________________________________________________________________
+Frame3DD version: 20140514+               http://frame3dd.sf.net/
+GPL Copyright (C) 1992-2014, Henri P. Gavin 
+Frame3DD is distributed in the hope that it will be useful but with no warranty.
+For details see the GNU Public Licence: http://www.fsf.org/copyleft/gpl.html
+________________________________________________________________________________
+
+Warren Truss Prototype-00 (kips in)  
+Sat Oct  4 15:54:50 2014
+________________________________________________________________________________
+In 2D problems the Y-axis is vertical.  In 3D problems the Z-axis is vertical.
+________________________________________________________________________________
+    4 NODES              4 FIXED NODES        4 FRAME ELEMENTS   1 LOAD CASES   
+________________________________________________________________________________
+N O D E   D A T A                                           R E S T R A I N T S
+  Node       X              Y              Z         radius  Fx Fy Fz Mx My Mz
+    1       0.000000       0.000000       0.000000    0.000   1  1  1  1  1  0
+    2     187.000000       0.000000       0.000000    0.000   0  1  1  1  1  0
+    3      58.500000      85.680000       0.000000    0.000   0  0  1  1  1  0
+    4     128.500000      85.680000       0.000000    0.000   0  0  1  1  1  0
+F R A M E   E L E M E N T   D A T A					(local)
+  Elmnt  J1    J2     Ax   Asy   Asz    Jxx     Iyy     Izz       E       G roll  density
+    1     1     2   10.0   1.0   1.0    1.0     1.0     0.0  29000.0 11500.0   0 7.33e-07
+    2     4     3   10.0   1.0   1.0    1.0     1.0     0.0  29000.0 11500.0   0 7.33e-07
+    3     2     4   10.0   1.0   1.0    1.0     1.0     0.0  29000.0 11500.0   0 7.33e-07
+    4     3     1   10.0   1.0   1.0    1.0     1.0     0.0  29000.0 11500.0   0 7.33e-07
+  Neglect shear deformations.
+  Neglect geometric stiffness.
+
+L O A D   C A S E   1   O F   1  ... 
+
+   Gravity X =  0.0    Gravity Y =  0.0    Gravity Z =  0.0 
+   2 concentrated loads
+   0 uniformly distributed loads
+   0 trapezoidally distributed loads
+   0 concentrated point loads
+   0 temperature loads
+   1 prescribed displacements
+ N O D A L   L O A D S  +  E Q U I V A L E N T   N O D A L   L O A D S  (global)
+  Node        Fx          Fy          Fz          Mxx         Myy         Mzz
+     3       0.000     -50.000       0.000       0.000       0.000       0.000
+     4       0.000     -50.000       0.000       0.000       0.000       0.000
+
+ P R E S C R I B E D   D I S P L A C E M E N T S                        (global)
+  Node        Dx          Dy          Dz          Dxx         Dyy         Dzz
+     1       0.100       0.000       0.000       0.000       0.000       0.000
+
+E L A S T I C   S T I F F N E S S   A N A L Y S I S   via  L D L'  decomposition
+
+
+L O A D   C A S E   1   O F   1  ... 
+
+N O D E   D I S P L A C E M E N T S  					(global)
+  Node    X-dsp       Y-dsp       Z-dsp       X-rot       Y-rot       Z-rot
+     1    0.100000    0.0         0.0         0.0         0.0        -0.000301
+     2    0.122014    0.0         0.0         0.0         0.0         0.000301
+     3    0.115127   -0.036554    0.0         0.0         0.0        -0.000188
+     4    0.106887   -0.036554    0.0         0.0         0.0         0.000188
+F R A M E   E L E M E N T   E N D   F O R C E S				(local)
+  Elmnt  Node       Nx          Vy         Vz        Txx        Myy        Mzz
+     1      1    -34.139t      0.0        0.0        0.0        0.0       -0.001
+     1      2     34.139t      0.0        0.0        0.0        0.0        0.001
+     2      4     34.139c      0.0        0.0        0.0        0.0        0.002
+     2      3    -34.139c      0.0        0.0        0.0        0.0       -0.002
+     3      2     60.543c      0.0        0.0        0.0        0.0       -0.001
+     3      4    -60.543c      0.0        0.0        0.0        0.0       -0.002
+     4      3     60.543c      0.0        0.0        0.0        0.0        0.002
+     4      1    -60.543c      0.0        0.0        0.0        0.0        0.001
+R E A C T I O N S							(global)
+  Node        Fx          Fy          Fz         Mxx         Myy         Mzz
+     1       0.000      50.000       0.000       0.000       0.000       0.0  
+     2       0.0        50.000       0.000       0.000       0.000       0.0  
+     3       0.0         0.0         0.000       0.000       0.000       0.0  
+     4       0.0         0.0         0.000       0.000       0.000       0.0  
+R M S    R E L A T I V E    E Q U I L I B R I U M    E R R O R: 4.472e-16
+

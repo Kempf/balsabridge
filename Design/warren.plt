@@ -1,6 +1,6 @@
 # FRAME3DD ANALYSIS RESULTS  http://frame3dd.sf.net/ VERSION 20140514+ 
 # Warren Truss Prototype-00 (kips in)  
-# Fri Oct  3 17:46:21 2014
+# Sat Oct  4 15:46:44 2014
 # G N U P L O T   S C R I P T   F I L E 
 set autoscale
 unset border

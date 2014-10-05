@@ -1,0 +1,6 @@
+# TeX logs
+*.log
+# TeX compile files
+*.aux
+# Stuff, I guess?
+*.synctex.gz

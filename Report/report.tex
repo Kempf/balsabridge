@@ -1,28 +1,48 @@
-\documentclass[12pt,titlepage]{article}
-	
+\documentclass[12pt]{article}
+	\usepackage{graphicx}
+	\usepackage[round]{natbib}
 	\linespread{1.3}
-	
-\begin{document}
-	
+	\bibliographystyle{plainnat}
 	\title{
 		Group \#07 \\
 		Bridge-00 \\
-		69g, 9001N
+		18g, 1700N \\[1cm]
+		\includegraphics[width=0.7\textwidth]{photo}
 	}
-	\date{\today}
 	\author{
 		Alex Miles \\ u5568175 \\ 16.7\%
 		\and Arlene Mendoza \\ u5589650 \\ 16.7\%
-		\and Cesar Encalada Aguilar \\ u5286505 \\ 0\%
 		\and Itsuki Nishida \\ u5578430 \\ 16.7\%
 		\and Paul Apelt \\ u5568225 \\ 16.7\%
 		\and Stephen Lonergan \\ u5349877 \\ 16.7\%
 		\and Thomas Hale \\ u5568225 \\ 16.7\%
 	}
+\begin{document}
 	\maketitle
-
 	\section{Design}
 		% design assumptions and methods
+		\subsection{Assumptions}
+		During the design process, the following assumptions have been made \citep[p.~264]{tbook}:
+		\begin{enumerate}
+			\item All loadings are applied at the joint,
+			\item Weight of the members neglected,
+			\item Joints are smooth (friction-less) pins,
+			\item Each member has no more than two joints.
+		\end{enumerate}
+		% TODO: why trapezium
+		Final bridge design can be seen in Figures \ref{dim} and \ref{proj}.
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=\textwidth]{dim}
+			\caption{Dimensioned drawing.}
+			\label{dim}
+		\end{figure}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.6\textwidth]{proj}
+			\caption{3D-Projection.}
+			\label{proj}
+		\end{figure}
 		% dimensioned drawing
 	\section{Analysis}
 		% table of member loads
@@ -36,5 +56,5 @@
 		% much sad
 		% testing machine OP
 		% please nerf
-	
+	\bibliography{bib}
 \end{document}

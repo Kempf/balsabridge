@@ -4,3 +4,6 @@
 *.aux
 # Stuff, I guess?
 *.synctex.gz
+# BibTex
+*.bbl
+*.blg

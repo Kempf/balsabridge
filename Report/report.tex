@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 
-	\usepackage{graphicx}
+	\usepackage{graphicx,amsmath}
 	\usepackage[round]{natbib}
 
 	\linespread{1.3}
@@ -65,22 +65,45 @@
 
 		% construction process 
 		% materials Used
-		% difficulties faced - measuring accurately, It ended up being 185mm than 187mm and the trapezium was also slightly lopsided by a 1mm
+		% difficulties faced - measuring accurately, It ended up being 185mm than 187mm and the trapezium was also slightly lopsided by a 1mm, angles are fucked!
 		% weight issues - excess glue fail 
 		% picture of the materials used
 
 	\section{Analysis}
 
-		Due to the unconventional design, to ease the calculations during the analysis, it was assumed that the load is equally distributed between eight trapezium-shaped trusses. Thus, a single trapezium truss was analyzed, and then extended to approximate the entire bridge.
+		Due to the unconventional design, to ease the calculations during the analysis, it was assumed that the load is equally distributed between eight trapezium-shaped trusses. Thus, a single trapezium truss was analyzed, and then extended to approximate the entire bridge. Internal forces, nodes and members are labelled as per Figure~\ref{trap}. As the truss is symmetrical, only two nodes needed to be analyzed.
+
+		\begin{figure}[h!]
+			\centering
+			%\includegraphics[width=0.6\textwidth]{trap}
+			\caption{Trapezium truss.}
+			\label{trap}
+		\end{figure}
+
+		For a load of 100N divided equally between nodes A and B, force equilibrium for nodes A and C are described in equation blocks \ref{eqn1} and \ref{eqn2} respectively.
 
 		% insret calculations here
 
-		The table of forces in each member of the trapezium truss under a load of 100N across the top two nodes can be seen in Table~\ref{loads}.
+		\begin{subequations}
+			\begin{align}
+				F_s \sin 55 = 50 N, \\
+				F_s \cos 55 = F_t.
+			\end{align} \label{eqn1}
+		\end{subequations}
+		\begin{subequations}
+			\begin{align}
+				F_s \sin 55= F_r, \\ 
+				F_s \cos 55 = F_b.
+			\end{align} \label{eqn2}
+		\end{subequations}
+
+		The results of solving the above equations are presented in Table~\ref{loads}.
 		
 		% table of member loads
+		% NOT ACTUAL LOADS
 
 		\begin{table}[h!]
-			\caption{Member loads}
+			\caption{Member loads.}
 			\begin{center}
 			\begin{tabular}{ | r | l | }
 				\hline
@@ -94,7 +117,30 @@
 
 		% assumptions
 		% fail predictions
+
 		% max load
+
+		Maximum loads for each member were calculated using the values given in the Assignment sheet. Modulus of elasticity $E=3\mathrm{GN}/\mathrm{m}^2$, standard deviation $\sigma=+2.4/-2.1\mathrm{MN}/\mathrm{m}^2$. Tensile strength $\sigma_t=20\mathrm{GN}/\mathrm{m}^2$,  standard deviation $\sigma=+3.6/-3.4\mathrm{MN}/\mathrm{m}^2$. Compressive strength $\sigma_t=12\mathrm{GN}/\mathrm{m}^2$,  standard deviation $\sigma=+2.1/-2.8\mathrm{MN}/\mathrm{m}^2$. To calculate maximum load from strength values, equation \ref{eqs} was used. The results are presented in Table~\ref{maxloads}.
+
+		\begin{equation}
+			\sigma=\frac{P}{A}
+			\label{eqs}
+		\end{equation}
+
+		\begin{table}[h!]
+			\caption{Maximum member loads.}
+			\begin{center}
+			\begin{tabular}{ | r | l | l | }
+				\hline
+				& average & $-1\sigma$ \\ \hline
+				3x3 mm (c) & 108 N & 82.8 N \\ \hline
+				3x3 mm (t) & 180 N & 149.4 N \\ \hline
+				5x5 mm (c) & 300 N & 230 N \\ \hline
+			\end{tabular}
+			\end{center}
+			\label{maxloads}
+		\end{table}
+
 		% reasons
 
 	\section{Results}

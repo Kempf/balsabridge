@@ -1,18 +1,14 @@
 \documentclass[12pt]{article}
-
 	\usepackage{graphicx,amsmath}
 	\usepackage[round]{natbib}
-
 	\linespread{1.3}
 	\bibliographystyle{plainnat}
-
 	\title{
 		Group \#07 \\
 		Bridge-00 \\
 		18g, 1700N \\[1cm]
 		\includegraphics[width=0.7\textwidth]{photo}
 	}
-
 	\author{
 		Alex Miles \\ u5568175 \\ 16.7\%
 		\and Arlene Mendoza \\ u5589650 \\ 16.7\%
@@ -21,112 +17,85 @@
 		\and Stephen Lonergan \\ u5349877 \\ 16.7\%
 		\and Thomas Hale \\ u5568225 \\ 16.7\%
 	}
-
 \begin{document}
 	\maketitle
-
 	\section{Design}
-
 		% design assumptions and methods
-
 		\subsection{Assumptions}
 		During the design process, the following assumptions have been made \citep[p.~264]{tbook}:
-
 		\begin{enumerate}
 			\item All loadings are applied at the joint,
 			\item Weight of the members neglected,
 			\item Joints are smooth (friction-less) pins,
 			\item Each member has no more than two joints.
 		\end{enumerate}
-
 		% TODO: why trapezium
 		% other designs considered
 		% photo of a prototype
-
 		Final bridge design can be seen in Figures \ref{dim} and \ref{proj}.
-
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=\textwidth]{dim}
 			\caption{Dimensioned drawing.}
 			\label{dim}
 		\end{figure}
-
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=0.6\textwidth]{proj}
 			\caption{3D-Projection.}
 			\label{proj}
 		\end{figure}
-
 		% dimensioned drawing
-
 		\subsection{Methods}
-
 		% construction process 
 		% materials Used
 		% difficulties faced - measuring accurately, It ended up being 185mm than 187mm and the trapezium was also slightly lopsided by a 1mm, angles are fucked!
 		% weight issues - excess glue fail 
 		% picture of the materials used
-
 	\section{Analysis}
-
 		Due to the unconventional design, to ease the calculations during the analysis, it was assumed that the load is equally distributed between eight trapezium-shaped trusses. Thus, a single trapezium truss was analyzed, and then extended to approximate the entire bridge. Internal forces, nodes and members are labelled as per Figure~\ref{trap}. As the truss is symmetrical, only two nodes needed to be analyzed.
-
 		\begin{figure}[h!]
 			\centering
 			%\includegraphics[width=0.6\textwidth]{trap}
 			\caption{Trapezium truss.}
 			\label{trap}
 		\end{figure}
-
 		For a load of 100N divided equally between nodes A and B, force equilibrium for nodes A and C are described in equation blocks \ref{eqn1} and \ref{eqn2} respectively.
-
 		% insret calculations here
-
 		\begin{subequations}
 			\begin{align}
-				F_s \sin 55 = 50 N, \\
-				F_s \cos 55 = F_t.
+				F_s \sin 56 = 50 N, \\
+				F_s \cos 56 = F_t.
 			\end{align} \label{eqn1}
 		\end{subequations}
 		\begin{subequations}
 			\begin{align}
-				F_s \sin 55= F_r, \\ 
-				F_s \cos 55 = F_b.
+				F_s \sin 56= F_r, \\ 
+				F_s \cos 56 = F_b.
 			\end{align} \label{eqn2}
 		\end{subequations}
-
 		The results of solving the above equations are presented in Table~\ref{loads}.
-		
 		% table of member loads
-		% NOT ACTUAL LOADS
-
 		\begin{table}[h!]
 			\caption{Member loads.}
 			\begin{center}
 			\begin{tabular}{ | r | l | }
 				\hline
-				70 3x3 mm (top) & 34.14 N (c) \\ \hline
-				103.75 5x5 mm (side) & 60.54 N (c) \\ \hline
-				187 3x3 mm (bottom) & 34.14 N (t) \\ \hline
+				70 3x3 mm (top) & 33.7 N (c) \\ \hline
+				103.75 5x5 mm (side) & 60.3 N (c) \\ \hline
+				187 3x3 mm (bottom) & 33.7 N (t) \\ \hline
 			\end{tabular}
 			\end{center}
 			\label{loads}
 		\end{table}
-
 		% assumptions
 		% fail predictions
-
 		% max load
-
 		Maximum loads for each member were calculated using the values given in the Assignment sheet. Modulus of elasticity $E=3\mathrm{GN}/\mathrm{m}^2$, standard deviation $\sigma=+2.4/-2.1\mathrm{MN}/\mathrm{m}^2$. Tensile strength $\sigma_t=20\mathrm{GN}/\mathrm{m}^2$,  standard deviation $\sigma=+3.6/-3.4\mathrm{MN}/\mathrm{m}^2$. Compressive strength $\sigma_t=12\mathrm{GN}/\mathrm{m}^2$,  standard deviation $\sigma=+2.1/-2.8\mathrm{MN}/\mathrm{m}^2$. To calculate maximum load from strength values, equation \ref{eqs} was used. The results are presented in Table~\ref{maxloads}.
-
 		\begin{equation}
 			\sigma=\frac{P}{A}
 			\label{eqs}
 		\end{equation}
-
 		\begin{table}[h!]
 			\caption{Maximum member loads.}
 			\begin{center}
@@ -140,11 +109,8 @@
 			\end{center}
 			\label{maxloads}
 		\end{table}
-
 		% reasons
-
 	\section{Results}
-
 		% analysis of the difference
 		% why fail
 		% much sad
@@ -152,7 +118,6 @@
 		% please nerf
 		%Add pic of the final bridge and show the glue
 		%What was the final load it could hold?
-
 	\bibliography{bib}
 \end{document}
 

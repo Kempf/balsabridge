@@ -64,17 +64,17 @@
 		% insret calculations here
 		\begin{subequations}
 			\begin{align}
-				F_s \sin 56 = 50 N, \\
-				F_s \cos 56 = F_t.
+				F_s \sin 56&=50\mathrm{N}, \\
+				F_s \cos 56&=F_t.
 			\end{align} \label{eqn1}
 		\end{subequations}
 		\begin{subequations}
 			\begin{align}
-				F_s \sin 56= F_r, \\ 
-				F_s \cos 56 = F_b.
+				F_s \sin 56&=F_r, \\ 
+				F_s \cos 56&=F_b.
 			\end{align} \label{eqn2}
 		\end{subequations}
-		The results of solving the above equations are presented in Table~\ref{loads}.
+		The results of solving the above equations are presented in Table~\ref{loads}. Note that the internal force experienced by members is twice the given value, because it occurs at both ends.
 		% table of member loads
 		\begin{table}[h!]
 			\caption{Member loads.}
@@ -89,7 +89,6 @@
 			\label{loads}
 		\end{table}
 		% assumptions
-		% fail predictions
 		% max load
 		Maximum loads for each member were calculated using the values given in the Assignment sheet. Modulus of elasticity $E=3\mathrm{GN}/\mathrm{m}^2$, standard deviation $\sigma=+2.4/-2.1\mathrm{MN}/\mathrm{m}^2$. Tensile strength $\sigma_t=20\mathrm{GN}/\mathrm{m}^2$,  standard deviation $\sigma=+3.6/-3.4\mathrm{MN}/\mathrm{m}^2$. Compressive strength $\sigma_t=12\mathrm{GN}/\mathrm{m}^2$,  standard deviation $\sigma=+2.1/-2.8\mathrm{MN}/\mathrm{m}^2$. To calculate maximum load from strength values, equation \ref{eqs} was used. The results are presented in Table~\ref{maxloads}.
 		\begin{equation}
@@ -109,7 +108,49 @@
 			\end{center}
 			\label{maxloads}
 		\end{table}
+		% TODO: add buckling
 		% reasons
+		To predict the maximum load, the weakest section of the bridge had to be found. That was done by first summing up the maximum loads of all top, bottom and side members, (equation block~\ref{eqsa}), using values from Table~\ref{maxloads}, average column.
+		\begin{subequations}
+			\begin{align}
+				P_{top}&=7\times108+2\times300
+				&=1356\mathrm{N}\\
+				P_{side}&=8\times300
+				&=2400\mathrm{N}\\
+				P_{bottom}&=7\times180
+				&=1260\mathrm{N}
+			\end{align}
+			\label{eqsa}
+		\end{subequations}
+		Then the safety rations (defined in equation~\ref{eqr}) were calculated for each section (equation block~\ref{eqrl}), using values from Table~\ref{loads}.
+		\begin{equation}
+			R=\frac{P_{max}}{P}
+			\label{eqr}
+		\end{equation}
+		\begin{subequations}
+			\begin{align}
+				R_{top}&=40.2\\
+				R_{side}&=39.8\\
+				R_{bottom}&=37.4
+			\end{align}
+			\label{eqrl}
+		\end{subequations}
+		The lowest safety ratio member will break first, thus bottom was determined to be the breaking point. The actual maximum load was determined in equation~\ref{eqt}, where $P$ is the load used to calculate $R$. The same steps were carried out in equation~\ref{eqs}, but the strength was assumed to be $1\sigma$ below average.
+		\begin{equation}
+			\begin{align}
+				F&=\frac{R P}{2}
+				&=1869.4
+			\end{align}
+			\label{eqt}
+		\end{equation}
+		\begin{equation}
+			\begin{align}
+				F&=\frac{R_{sigma} P_{\sigma}}{2}
+				&=1551.6
+			\end{align}
+			\label{eqs}
+		\end{equation}
+		The average of the two $1710.5\mathrm{N}$, was chosen as predicted maximum load.
 	\section{Results}
 		% analysis of the difference
 		% why fail

@@ -108,7 +108,23 @@
 			\end{center}
 			\label{maxloads}
 		\end{table}
-		% TODO: add buckling
+		Buckling loads were calculated for members under compression (using equation~\ref{eqb}), and it found that the buckling loads of members under compression (see Table~\ref{buck}) did not exceed maximum load, therefore buckling was not critical.
+		\begin{equation}
+			P_b=\frac{\pi^2 E I}{(kL)^2}
+			\label{eqb}
+		\end{equation}
+		\begin{table}[h!]
+			\caption{Maximum buckling loads.}
+			\begin{center}
+			\begin{tabular}{ | r | l | l | }
+				\hline
+				& average & $-1\sigma$ \\ \hline
+				3x3 70 mm (c) & 163.1 N & 163.0 N \\ \hline
+				5x5 103.75 mm (c) & 573.1 N & 572.7 N \\ \hline
+			\end{tabular}
+			\end{center}
+			\label{buck}
+		\end{table}
 		% reasons
 		To predict the maximum load, the weakest section of the bridge had to be found. That was done by first summing up the maximum loads of all top, bottom and side members, (equation block~\ref{eqsa}), using values from Table~\ref{maxloads}, average column.
 		\begin{subequations}
@@ -135,7 +151,7 @@
 			\end{align}
 			\label{eqrl}
 		\end{subequations}
-		The lowest safety ratio member will break first, thus bottom was determined to be the breaking point. The actual maximum load was determined in equation block~\ref{eqt}, where $P$ is the load used to calculate $R$. The same steps were carried out in equation block~\ref{eqs}, but the strength was assumed to be $1\sigma$ below average.
+		The lowest safety ratio member will break first, thus bottom was determined to be the breaking point (snapping-type failure). The actual maximum load was determined in equation block~\ref{eqt}, where $P$ is the load used to calculate $R$. The same steps were carried out in equation block~\ref{eqs}, but the strength was assumed to be $1\sigma$ below average.
 		\begin{subequations}
 			\begin{align}
 				F&=\frac{R P}{2} \\

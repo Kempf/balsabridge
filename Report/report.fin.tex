@@ -3,7 +3,7 @@
 	\usepackage[round]{natbib}
 	\usepackage[margin=3cm]{geometry}
 	\linespread{1.3}
-	\bibliographystyle{plainnat}
+	\bibliographystyle{authordate1}
 	\title{
 		Group \#07 \\
 		Bridge-00 \\
@@ -103,14 +103,14 @@ A template/scale diagram of the trapezium shape was then made to gain accuracy i
 		% weight issues - excess glue fail 
 		% picture of the materials used
 	\section{Analysis}
-		Due to the unconventional design, to ease the calculations during the analysis, it was assumed that the load is equally distributed between eight trapezium-shaped trusses. Thus, a single trapezium truss was analyzed, and then extended to approximate the entire bridge. Internal forces, nodes and members are labelled as per Figure~\ref{trap}. As the truss is symmetrical, only two nodes needed to be analyzed.
+		Due to the unconventional design, to ease the calculations during the analysis, it was assumed that the truss structure behaves like a single trapezium. Thus, a single trapezium truss was analyzed, and then extended to approximate the entire bridge. Internal forces, nodes and members are labelled as per Figure~\ref{trap}. As the truss is symmetrical, only two nodes needed to be analyzed.
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=0.5\textwidth]{trapanal}
 			\caption{Trapezium truss.}
 			\label{trap}
 		\end{figure}
-		For a load of 100N divided equally between nodes A and B, force equilibrium for nodes A and C are described in equation blocks \ref{eqn1} and \ref{eqn2} respectively.
+		For a load of 100~N divided equally between nodes A and B, force equilibrium for nodes A and C are described in equation blocks \ref{eqn1} and \ref{eqn2} respectively.
 		% insret calculations here
 		\begin{subequations}
 			\begin{align}
@@ -132,9 +132,9 @@ A template/scale diagram of the trapezium shape was then made to gain accuracy i
 			\begin{center}
 			\begin{tabular}{ | r | l | }
 				\hline
-				70 3$\times$3 ~mm (top) & 33.7 N (c) \\ \hline
-				103.75 5$\times$5 ~mm (side) & 60.3 N (c) \\ \hline
-				187 3$\times$3 ~mm (bottom) & 33.7 N (t) \\ \hline
+				70 3$\times$3 ~mm (top) & 33.7~N (c) \\ \hline
+				103.75 5$\times$5 ~mm (side) & 60.3~N (c) \\ \hline
+				187 3$\times$3 ~mm (bottom) & 33.7~N (t) \\ \hline
 			\end{tabular}
 			\end{center}
 			\label{loads}
@@ -230,27 +230,17 @@ The predicted strength of the bridge was 1716~N while the maximum force that it 
 Upon a load being applied to the top of the bridge, it became evident that the rear left corner did not have the length to fully span the gap. The rear 4 trapeziums immediately started to slip down into the gap below the block. This was ultimately the cause of the actual load being significantly below the predicted load. The four supported trapeziums at the front of the structure still held, and they performed as they were expected to. However, no member of the bridge actually failed. Other minor factors played a part, such as the bridge being slightly higher at the top in the rear and the overall strength of the glued joints. In an attempt to analyse why no member broke, the full sequence of events is laid out.
 
 To prevent the rear left section of the bridge from instantly separating and falling down under the load, the joints needed to supply an upward force, equivalent to the downward force on the section. This resulted in a shear force on the 5th joint on the upper left hand side, a shear force on the 4th joint on the lower left hand side, and moments about the corresponding joints on the left hand side. Joints are labelled in figure~\ref{AnalysisLabelled}.
-
-
-		 
 		   \begin{figure}[h!]
-                 	\centering
-			\begin{minipage}[b]{0.45\linewidth}
-			\includegraphics[width=1.1\textwidth]{failtop}
-			\caption{Failure points on the top of the bridge}
-			\label{failtop}
-		\end{minipage}
-		\quad
-	\begin{minipage}[b]{0.45\linewidth}
-			\includegraphics[width=1.4\textwidth]{AnalysisLabelled}
-			\caption{Labelled Sections}
+			\begin{center}
+			\includegraphics[width=0.5\textwidth]{AnalysisLabelled}
+			\end{center}
+			\caption{Labelled Sections.}
 			\label{AnalysisLabelled}
-		\end{minipage}
 		\end{figure}
              
 The balsa glue itself has a reasonably high degree of elasticity under both torsional and shear forces, with the ability to be displaced several millimetres prior to failure. 
 
-The moment about the two right-side joints was also counteracted by the glue. As was shown in our tests (see appendix), the maximum torsional force (light fibre-tear failure) is roughly one third the maximum shear force (cohesive failure). Double gluing may possibly have spread this torsional force through a larger volume of cement, allowing it to withstand a larger force prior to failure. 
+The moment about the two right-side joints was also counteracted by the glue. As was shown in our tests (see \ref{appendix}), the maximum torsional force (light fibre-tear failure) is roughly one third the maximum shear force (cohesive failure). Double gluing may possibly have spread this torsional force through a larger volume of cement, allowing it to withstand a larger force prior to failure. 
 
 The joints on the left hand side however, were more susceptible than the right hand side. The joints on the left had separated by about 2~mm prior to failure. Due to the much higher shear strength this was unexpected, however, the balsa glue having a high elasticity was what enabled this. The span of the bridge meant that the right joints had only rotated between 0\textdegree and 2\textdegree approximately, while during testing they were able to maintain rotation of up to 45\textdegree prior to failure, which was when the max force was reached. There was also a small shear force on each joint on the right, but the glue was able to absorb this at this time, as it was significantly less than the shear on the left joints.
 
@@ -260,11 +250,10 @@ The only support the section had at this time on was from the two joints on the 
 
 Through testing, the maximum moment for a heavily glued joint was about $28$ -- $30\mathrm{Nm/cm^2}$ of glue. The glue was estimated to have been applied to about $1\mathrm{cm^2}$, the maximum moment in a joint would be about $28$ -- $30\mathrm{Nm}$ and the maximum shear about $65$ -- $80\mathrm{N}$. 
 
-The trapeziums appear to flatten out as the top moves to the left, so the load is still distributed at this point, as seen in figure ~\ref{load top} However, due to the slant of the bridge, the rear trapeziums had a much higher load than the front ones, causing a large shear force to build up in the upper and lower right joints, going from the rear to the supported section as they failed one by one. This suggests that the joints did not fail due to the moment. ($30 / 0.035 = 8570\mathrm{N}$) which would be the required resultant distributed force half way along the top of the bridge. 
-
+The trapeziums appear to flatten out as the top moves to the left, so the load is still distributed at this point, as seen in figure ~\ref{loadtop} However, due to the slant of the bridge, the rear trapeziums had a much higher load than the front ones, causing a large shear force to build up in the upper and lower right joints, going from the rear to the supported section as they failed one by one. This suggests that the joints did not fail due to the moment. ($30 / 0.035 = 8570\mathrm{N}$) which would be the required resultant distributed force half way along the top of the bridge. 
  			\begin{figure}[h!]
 				\centering
-				\includegraphics[width=0.35\textwidth]{loadtop}
+				\includegraphics[width=0.45\textwidth]{loadtop}
 				\caption{Half of the top joint row under load}
 				\label{loadtop}
 				\end{figure}
@@ -279,50 +268,51 @@ This left the remaining force to be supported by the functioning 4 trapeziums, w
 \bibliography{bib}
 \clearpage
 \section*{Appendix}
+\label{appendix}
 %glue stuff here
-After the bridge had undergone the final test and did not perform as well as we had hoped, we decided to test further the the joint strength at varying amounts of glue. 40 tests using 8 cm 5mm balsa wood pieces were glued together like seen in figure 7.
+After the bridge had undergone the final test and did not perform as well as we had hoped, we decided to test further the the joint strength at varying amounts of glue. 40 tests using 8~cm 5mm balsa wood pieces were glued together like seen in Figure~\ref{jointtesting}.
                 \begin{figure}[h!]
 			\centering
 			\includegraphics[width=0.3\textwidth]{Jointtest}
-			\caption{Joint Tests}
-			\label{Joint Testing}
+			\caption{Joint test layout.}
+			\label{jointtesting}
 		\end{figure}
 
 There were 4 groups that we decided on testing; a very small amount (A), a thin layer (B), a sufficient amount so that glue spills out from the sides of the joint (C) and a very thick layer of glue, making a visible layer between the joints, - with overflow -  similar to our bridge (D).
 We wanted to test the weight the joint could hold before the wood itself or the glue joint broke.
 
 To test, the joints were clamped at to the surface of a table with half the joint hanging off, and the other half on. 1N weights were progressively hung off  the unsupported member, to simulate a gradually increasing force. The weight was applied at a constant distance from the edge of the joint so the moment was consistent for our 40 tests.
-The data collected can be seen in figure 8 and the graph in figure 9, where group 1,2,3 and 4 correspond to A, B, C and D accordingly.
+The data collected can be seen in Figure~\ref{tab} and the graph in Figure~\ref{graphs}, where group 1, 2, 3 and 4 correspond to A, B, C and D accordingly.
 		
                 \begin{figure}[ht]
                  	\centering
-			\begin{minipage}[b]{0.45\linewidth}
+			\begin{minipage}[b]{0.35\linewidth}
 			\includegraphics[width=1\textwidth]{GlueResults}
-			\caption{Glue Joint Results}
-			\label{fig:minipage1}
+			\caption{Testing results.}
+			\label{tab}
 		\end{minipage}
 		\quad
-	\begin{minipage}[b]{0.45\linewidth}
+	\begin{minipage}[b]{0.35\linewidth}
 			\includegraphics[width=1.2\textwidth]{GlueGraphlegit}
-			\caption{Joint strength graph}
-			\label{fig:minipage2}
+			\caption{Glue strengths.}
+			\label{graphs}
 		\end{minipage}
 		\end{figure}
                 
               
-We also carried out a few tests on the shear force of the joints, however, due to the impracticality of the measuring procedure, only a small number of tests were able to be conducted. The average of these tests was measured to be 32N.
-                 
+We also carried out a few tests on the shear force of the joints, however, due to the impracticality of the measuring procedure, only a small number of tests were able to be conducted. The average of these tests was measured to be 32~N.
                  \begin{figure}[h!]
                           \centering
-                          \includegraphics[width=0.4\textwidth]{Articlegraph}
-                          \caption{(Mohamed Bak,2012)}
-                          \label{GraphGlue}
+                          \includegraphics[width=0.5\textwidth]{Articlegraph}
+                          \caption{Theoretical predictions \citep{glue}.}
+                          \label{graphg}
                  \end{figure}
+
 Our hypothesis before the testing was that the strength of the glue will increase up until a point at which the strength plateaus then will drastically drop. We also predicted that the joint would display a reasonably high degree of elasticity, prior to the joint failing. 
 
-The testing that was implemented does show these results but not enough tests were carried out to view the dramatic drop in strength. Around ~1000 tests would have to be carried out in order to view this. 
+The testing that was implemented does show these results but not enough tests were carried out to view the dramatic drop in strength. Around 1000 tests would have to be carried out in order to view this. 
 Fortunately, the elasticity was demonstrated from the tests we did. The more glue the joint had, the higher the angle it could rotate to prior to failing. Some of these joints were able to reach roughly 45\textdegree rotation from their starting position, prior to failing. This suggests that increasing the volume of glue further would have allowed a higher degree of rotation, as the glue absorbed some of the force. The force absorbed by the glue would have an impact on the balsa not failing, however, cohesive failure would still occur at a high enough force.
 
 These results do prove that maybe glue was an issue with the joints as a lot of glue was used to reinforce the joints.
-The graph in figure 10 shows the results that we were aiming to achieve.
+The graph in Figure~\ref{graphg} shows the results that we were aiming to achieve.
 \end{document}

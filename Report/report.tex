@@ -32,9 +32,56 @@
 			\item Joints are smooth (friction-less) pins,
 			\item Each member has no more than two joints.
 		\end{enumerate}
-		% TODO: why trapezium
-		% other designs considered
-		% photo of a prototype
+
+		\subsection{Considerations}
+The task was set with a design criteria to span a gap of 180~mm and a width of 70~mm. The entire bridge also the bridge should weigh less than 18g. The goal was to be able to hold the largest weight possible.
+
+A very important design consideration was how many how many 2D truss panels should be used. The idea was by having more panels the design would be distributing the weight and if the layers span the 70~mm the design can be more efficient with its wood use. This is rather than having pieces holding the planes together that don't add significantly to the strength of the design. This would be a better use of the wood as all of our wood would be focused on holding a load applied from above. 
+
+Starting with a 70~mm wide layer of Warren trusses spanning 180~mm ran into a few problems. The largest limitation on the design was the materials allowed this meant the more triangles in the Warren truss the lower the truss had to be. This would mean create more smaller triangles which would increase the material. Several designs were looked at but it was found that spanning the gap required using a Warren truss didn't work due to the limit of material. However by removing all the triangles we had the outside of the truss which was in the shape of a trapezium. 
+
+Another factor was also making sure that the force was applied onto the joints and not onto one member therefore the top of the bridge where the loading is applied should be less than 70~mm. The top of the bridge runs into the supports on both sides of the bridge and this transfers the load directly into the ground on either side of the trapezium. This takes advantage of the surface reactions. Because of this the more vertical the side pieces the better as they will distribute more of the force onto the support reactions rather than the other sections of the bridge. This is under the assumption that the sides don’t break but if more force is downwards then some of the bracing stopping the bottom from slipping outwards wouldn't be needed and could instead could be moved to the sides.  
+
+As these side pieces are taking the largest force it was decided to use the 5~mm pieces here. To stop the pieces from sliding out some of the 3~mm pieces on the bottom were used to hold the two ends of the design together and prevent slipping.The original design had half the pieces on the bottom as there were on the top. This bridge was tested rather imperfectly as the weight was skewed off centre and so broke earlier than expected. 
+
+By moving two pieces of 5~mm to the sides of the top it was found that we could double the number of pieces along the bottom. Theoretically the top and bottom of the truss take the same force and this is shown later in the calculations. By moving the 5~mm pieces to the top the top was 100N stronger than the bottom and so the wood was being used efficiently as this gap is relatively small. The side supports while stronger would actually fail before the top does but after the bottom does and therefore the wood is being used very efficiently. The theoretical predictions for this later in the report shows that this is indeed the case.
+
+One thing also considered but decided against was gusset joints, it was decided that gusset joints would not be used for for two reasons. First of all was the material constraints, however this wasn't the biggest concern. The biggest concern was that gusset jointing due to how the joints are situated would be very similar to lamination, which was not allowed.
+
+\subsection{Construction}
+All the pieces were measured to the lengths in Table~\ref{list}, and they were then cut. Although the measuring was accurate, you lose some material whenever you cut. So to minimize loss of length, the pieces need to be cut in priority of one another. The 3~mm longest bottom pieces were cut first as these were extremely important to be at a full length. Total amount of material used is recorded in Table~\ref{materials}.
+		\begin{table}[h!]
+			\caption{List of member lengths.}
+			\begin{center}
+			\begin{tabular}{ | r | l | r | r | }
+				\hline
+				qty. & type & size & length \\ \hline
+				7 & bottom & 3$\times$3~mm & 187~mm \\ \hline
+				7 & top & 3$\times$3~mm & 70~mm \\ \hline
+				2 & top & 5$\times$5~mm & 70~mm \\ \hline
+				16 & sides & 5$\times$5~mm & 103.75~mm \\ \hline
+			\end{tabular}
+			\end{center}
+			\label{list}
+		\end{table}
+		\begin{table}[h!]
+			\caption{Materials used.}
+			\begin{center}
+			\begin{tabular}{ | r | r | r | }
+				\hline
+				size & given & used \\ \hline
+				3$\times$3~mm & 1800~mm & 1799~mm \\ \hline
+				5$\times$5~mm & 1800~mm & 1800~mm \\ \hline
+			\end{tabular}
+			\end{center}
+			\label{materials}
+		\end{table}
+
+The leftover pieces were used to create the top of the bridge, these have the least priority as their length can be compromised if need be. Two 5 ~mm pieces are used on the top of the bridge. The 5~mm sides should be cut to the maximum length possible using the leftover material. Making them taller will distribute the more force into the support reactions. A small reduction in length would however not drastically reduce the maximum load. 
+
+A template/scale diagram of the trapezium shape was then made to gain accuracy in the angles that needed to be attained (56 degrees). Place the sides of the trapezium (5~mm) down with the top and bottom 3~mm pieces on top. Ignore the lone 5~mm top piece as this will be glued on last for ease of construction. Once enough glue ( an amount when the two wood pieces are placed against each other that glue comes out from either side) was applied to the wood, the pieces were aligned to be at angles to each other and that the top and bottom pieces were in parallel. Weights were then placed to apply pressure to the joint. This would ensure the glue attains its maximum strength. The joints were then left to dry for each layer around 10 mins for another layer to be placed on top. The entire process was repeated until 8 layers were made.  The two 5~mm top pieces were then added to either side.
+
+
 		Final bridge design can be seen in Figures \ref{dim} and \ref{proj}.
 		\begin{figure}[h!]
 			\centering
@@ -52,11 +99,11 @@
 		\subsection{Methods}
 		% construction process 
 		% materials Used
-		% difficulties faced - measuring accurately, It ended up being 185mm than 187mm and the trapezium was also slightly lopsided by a 1mm, angles are fucked!
+		% difficulties faced - measuring accurately, It ended up being 185~mm than 187~mm and the trapezium was also slightly lopsided by a 1~mm, angles are fucked!
 		% weight issues - excess glue fail 
 		% picture of the materials used
 	\section{Analysis}
-		Due to the unconventional design, to ease the calculations during the analysis, it was assumed that the load is equally distributed between eight trapezium-shaped trusses. Thus, a single trapezium truss was analyzed, and then extended to approximate the entire bridge. Internal forces, nodes and members are labelled as per Figure~\ref{trap}. As the truss is symmetrical, only two nodes needed to be analyzed.
+		Due to the unconventional design, to ease the calculations during the analysis, it was assumed that the load is equally distributed between eight trapezium-shaped trusses. Thus, a single trapezium truss was analyzed, and then extended to approximate the entire bridge. Internal forces, nodes and members are labelled as per Figure~\ref{trap}. As the truss is sy~mmetrical, only two nodes needed to be analyzed.
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=0.7\textwidth]{trapanal}
@@ -85,9 +132,9 @@
 			\begin{center}
 			\begin{tabular}{ | r | l | }
 				\hline
-				70 3$\times$3 mm (top) & 33.7 N (c) \\ \hline
-				103.75 5$\times$5 mm (side) & 60.3 N (c) \\ \hline
-				187 3$\times$3 mm (bottom) & 33.7 N (t) \\ \hline
+				70 3$\times$3 ~mm (top) & 33.7 N (c) \\ \hline
+				103.75 5$\times$5 ~mm (side) & 60.3 N (c) \\ \hline
+				187 3$\times$3 ~mm (bottom) & 33.7 N (t) \\ \hline
 			\end{tabular}
 			\end{center}
 			\label{loads}
@@ -106,9 +153,9 @@
 			\begin{tabular}{ | r | l | l | }
 				\hline
 				& average & $-1\sigma$ \\ \hline
-				3$\times$3 mm (c) & 108 N & 82.8 N \\ \hline
-				3$\times$3 mm (t) & 180 N & 149.4 N \\ \hline
-				5$\times$5 mm (c) & 300 N & 230 N \\ \hline
+				3$\times$3 ~mm (c) & 108 N & 82.8 N \\ \hline
+				3$\times$3 ~mm (t) & 180 N & 149.4 N \\ \hline
+				5$\times$5 ~mm (c) & 300 N & 230 N \\ \hline
 			\end{tabular}
 			\end{center}
 			\label{maxloads}
@@ -125,15 +172,15 @@
 			\begin{tabular}{ | r | l | l | }
 				\hline
 				& average & $-1\sigma$ \\ \hline
-				3$\times$3 70 mm (c) & 163.1 N & 163.0 N \\ \hline
-				5$\times$5 103.75 mm (c) & 573.1 N & 572.7 N \\ \hline
+				3$\times$3 70 ~mm (c) & 163.1 N & 163.0 N \\ \hline
+				5$\times$5 103.75 ~mm (c) & 573.1 N & 572.7 N \\ \hline
 			\end{tabular}
 			\end{center}
 			\label{buck}
 		\end{table}
 		% reasons
 
-		To predict the maximum load, the weakest section of the bridge had to be found. That was done by first summing up the maximum loads of all top, bottom and side members, (equation block~\ref{eqsa}), using values from Table~\ref{maxloads}, average column.
+		To predict the maximum load, the weakest section of the bridge had to be found. That was done by first su~mming up the maximum loads of all top, bottom and side members, (equation block~\ref{eqsa}), using values from Table~\ref{maxloads}, average column.
 		\begin{subequations}
 			\begin{align}
 				P_{top}&=7\times108+2\times300
@@ -180,7 +227,7 @@
 	\section{Results}
 The predicted strength of the bridge was 1700N while the maximum force that it sustained during the test was 875N. This the most significant contributor to this imprecise prediction was that the bridge was too short to comfortably span the 18cm gap. Furthermore, gluing techniques were not researched and as a result the joints were not as strong as they otherwise may have been.
 
-Originally the bridge was designed to be 18.7cm long – just enough to span the 18cm gap. However, on the day of testing the bridge was found to be over the weight limit and in an attempt to fix this the bridge was sanded. After the sanding process the bridge was found to be 18.4cm, which left 2mm either side of the gap. Consequently, during the test the bridge slipped under the applied force and rotated so that roughly half the length of one side of the bridge was no longer in contact with the wood block. As a result the proportion of the distributed load applied to this section of the bridge produced a shear at this point in the row of joints. This shear force was maximum at point A (shown in Figure~\ref{loadtop}). This caused the joint at this point to break which can be seen in Figure~\ref{failtop} as the middle joint – the fifth joint from the top.
+Originally the bridge was designed to be 18.7cm long – just enough to span the 18cm gap. However, on the day of testing the bridge was found to be over the weight limit and in an attempt to fix this the bridge was sanded. After the sanding process the bridge was found to be 18.4cm, which left 2~mm either side of the gap. Consequently, during the test the bridge slipped under the applied force and rotated so that roughly half the length of one side of the bridge was no longer in contact with the wood block. As a result the proportion of the distributed load applied to this section of the bridge produced a shear at this point in the row of joints. This shear force was maximum at point A (shown in Figure~\ref{loadtop}). This caused the joint at this point to break which can be seen in Figure~\ref{failtop} as the middle joint – the fifth joint from the top.
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=0.7\textwidth]{loadtop}
@@ -196,7 +243,7 @@ After the joint at point $A$ snapped, the unsupported side of the bridge was dis
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=0.5\textwidth]{failtop}
-			\caption{Top of the bridge.}
+			\caption{Failure points on the top of the bridge.}
 			\label{failtop}
 		\end{figure}
 
